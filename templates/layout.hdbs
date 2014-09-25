@@ -3,8 +3,3 @@
   <h3>{{setting "name"}}</h3>
 </header>
 <section data-main/>
-<footer>
-  <p>Brought to you by James, Jeremiah, Yaniv, Adam, and Avi. Send questions/feedback/money to<a href="mailto:{{author.email}}">
-    {{author.name}}
-  </a></p>
-</footer>

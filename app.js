@@ -33,13 +33,15 @@
     },
 
     renderCountMe: function(searchResults) {
+      var currentUser = this.currentUser();
+      var name = currentUser.name();
       var count = searchResults.count; // counts value returned in array from search API query
       if (count <= 2) {
-        this.switchTo('show', { count: count, text: "slacker...", color: "red" });
+        this.switchTo('show', { count: count, text: "slacker...", color: "red", name: name });
       } else if (count >= 3  && count <= 10 ) {
-        this.switchTo('show', { count: count, text: "keep going...", color: "yellow" });
+        this.switchTo('show', { count: count, text: "keep going...", color: "yellow", name: name });
       } else {
-        this.switchTo('show', { count: count, text: "great job!", color: "green" });
+        this.switchTo('show', { count: count, text: "great job!", color: "green", name: name });
       }      
   }
 };
