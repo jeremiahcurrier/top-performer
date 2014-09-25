@@ -7,10 +7,5 @@
   "defaultLocale": "en",
   "private": true,
   "location": "user_sidebar",
-  "frameworkVersion": "1.0",
-  "parameters": [{
-  	"name": "Group ID",
-  	"type": "text",
-  	"required": true
-  }]
+  "frameworkVersion": "1.0"
 }
